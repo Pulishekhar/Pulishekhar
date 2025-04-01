@@ -14,23 +14,41 @@ function Projects() {
 
         {/* Project Items */}
         <div className="flex flex-col space-y-6">
-          {/* Online Quiz Maker */}
-          <div className="flex items-start">
-            <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">Online Quiz Maker</h3>
-            <ul className="list-disc ml-6 w-3/4">
-              <li>Created an interactive web application for creating and taking quizzes, featuring real-time feedback upon submission and user-friendly navigation.</li>
-            </ul>
-          </div>
+          
 
-          {/* ShopNow - Shopping App */}
-          <div className="flex items-start">
-            <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">ShopNow - Shopping App</h3>
-            <ul className="list-disc ml-6 w-3/4">
-              <li>Developed a dynamic and responsive e-commerce application using the MERN (MongoDB, Express, React, Node.js) stack, providing features like user authentication, shopping cart functionality, and payment integration.</li>
-              <li>Designed a user-friendly interface with seamless navigation, enhancing the overall shopping experience and increasing customer engagement.</li>
-            </ul>
-          </div>
+         {/* Chatting App - Real-time Messaging Application */}
+<div className="flex items-start">
+  <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">Chatting App - Real-time Messaging Application-{" "}
+  <a href="https://github.com/Pulishekhar/Chatting-App.git" className="underline">
+                link
+              </a>
+  
+   </h3>
+  <ul className="list-disc ml-6 w-3/4">
+    <li>Built a real-time messaging application using the MERN (MongoDB, Express, React, Node.js) stack, implementing features like user authentication, direct messaging, and chat history storage.</li>
+    <li>Integrated WebSockets (Socket.io) for real-time communication, ensuring instant message delivery and seamless user experience.</li>
+    <li>Implemented a user-friendly interface with dynamic message input, real-time notifications, and the ability to send images.</li>
+    <li>Optimized backend with Express for handling API requests, and MongoDB for scalable data storage, including user profiles and messages.</li>
+  </ul>
+</div>
 
+
+{/* PDF Parsing System - AI-Powered PDF Analysis */}
+<div className="flex items-start">
+  <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">PDF Parsing System - AI-Powered PDF Analysis-{" "}
+  <a href="https://github.com/Pulishekhar/PAI.git" className="underline">
+                link
+              </a>
+
+
+  </h3>
+  <ul className="list-disc ml-6 w-3/4">
+    <li>Developed an AI-powered PDF parsing system capable of analyzing large PDFs (1000+ pages), built with AngularJS for the frontend and Python for the backend, optimized for asynchronous processing.</li>
+    <li>Integrated AI-powered search and summarization features, enabling efficient extraction of meaningful data from lengthy documents with minimal user input.</li>
+    <li>Implemented chunked processing (50-100 pages at a time) with caching, significantly improving performance and reducing memory usage during large file handling.</li>
+    <li>Utilized pdfplumber and PyMuPDF libraries in Python for precise extraction of text and images from PDFs, supporting the backend processing of large files with streaming capabilities.</li>
+  </ul>
+  </div>
           {/* Bookstore Application */}
           <div className="flex items-start">
             <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">
