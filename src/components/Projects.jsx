@@ -1,110 +1,144 @@
 import React from "react";
 
+const projects = [
+  {
+    title: "Chatting App - Real-time Messaging Application",
+    url: "https://github.com/Pulishekhar/Chatting-App.git",
+    description: [
+      "Built a real-time messaging application using the MERN stack, with user authentication, direct messaging, and chat history.",
+      "Integrated WebSockets (Socket.io) for instant message delivery and smooth user experience.",
+      "User-friendly interface with dynamic message input, real-time notifications, and image sending.",
+      "Optimized backend with Express and MongoDB for scalable data storage.",
+    ],
+    imageSrc:
+      "https://www.livechat.com/app/og-app.9cb8caed98d60ab801c695f17c4231fb52f591a5c5055cbc509646d553cb6a72.png",
+    imageAlt: "Chatting App Preview",
+  },
+  {
+    title: "Live Quiz Platform",
+    url: "https://quizadmin-frontend.onrender.com/",
+    description: [
+      "Full-stack live quiz streaming website inspired by casino platforms, with polished interactive UX.",
+      "React, Tailwind CSS, React Router frontend with real-time quiz popups, wallets, and betting.",
+      "User and admin roles for quiz creation, player management, live control, and results.",
+      "Real-time chat, toast notifications, and dynamic poker lobby-inspired layout.",
+    ],
+    imageSrc: "/images/quiz-preview.png",
+    imageAlt: "Live Quiz Platform Preview",
+  },
+  {
+    title: "Bookstore Application",
+    url: "https://github.com/Pulishekhar/Bookstore.git",
+    description: [
+      "Full-stack bookstore using React, Node.js, Express, and MongoDB, with categorization and access control.",
+      "Responsive UI with Tailwind CSS and DaisyUI, plus dynamic routing via React Router.",
+      "Form validation with React Hook Form and real-time feedback using react-hot-toast.",
+    ],
+    imageSrc: "/images/bookstore-preview.png",
+    imageAlt: "Bookstore App Preview",
+  },
+];
+
+const experiences = [
+  {
+    title: "NeuroNexus Innovations - Intern",
+    date: "March 2023 - April 2024",
+    points: [
+      "Developed interactive quiz platform with question entry, multiple-choice answers, and immediate feedback.",
+      "Collaborated on UI enhancements to improve experience and accessibility.",
+    ],
+  },
+  {
+    title: "Sanskriti Committee, NIT RR - Associate Coordinator",
+    date: "Aug 2023",
+    points: [
+      "Supported event planning and execution with smooth operations.",
+      "Assigned volunteer tasks to leverage strengths and interests.",
+      "Completed tasks maintaining professionalism and organizational values.",
+    ],
+  },
+  {
+    title: "Sanskriti Committee, NIT RR - Volunteer",
+    date: "Dec 2022 – July 2023",
+    points: [
+      "Led teams to enhance leadership and problem-solving skills.",
+      "Ensured success of Eclectika 2023 with flexibility and support.",
+      "Assisted in planning event programs and content coordination.",
+    ],
+  },
+];
+
 function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center min-h-screen bg-cover bg-center p-8"
-      style={{ backgroundImage: "url('/path/to/your/background-image.jpg')" }} // Replace with your background image path
+      className="flex flex-col items-center min-h-screen p-8"
+      style={{
+        backgroundImage: "url('/path/to/your/background-image.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="bg-opacity-80 text-white p-6 rounded-lg w-full mt-[80px] mb-[60px]">
-        
+      <div className="bg-gray-900 bg-opacity-80 text-gray-100 p-6 rounded-lg w-full mt-[80px] mb-[60px] max-w-7xl mx-auto">
         {/* Projects Heading */}
         <h2 className="text-4xl font-bold mb-4 text-left ml-4">Projects</h2>
 
-        {/* Project Items */}
-        <div className="flex flex-col space-y-6">
-          
-
-         {/* Chatting App - Real-time Messaging Application */}
-<div className="flex items-start">
-  <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">Chatting App - Real-time Messaging Application-{" "}
-  <a href="https://github.com/Pulishekhar/Chatting-App.git" className="underline">
-                link
-              </a>
-  
-   </h3>
-  <ul className="list-disc ml-6 w-3/4">
-    <li>Built a real-time messaging application using the MERN (MongoDB, Express, React, Node.js) stack, implementing features like user authentication, direct messaging, and chat history storage.</li>
-    <li>Integrated WebSockets (Socket.io) for real-time communication, ensuring instant message delivery and seamless user experience.</li>
-    <li>Implemented a user-friendly interface with dynamic message input, real-time notifications, and the ability to send images.</li>
-    <li>Optimized backend with Express for handling API requests, and MongoDB for scalable data storage, including user profiles and messages.</li>
-  </ul>
-</div>
-
-
-{/* PDF Parsing System - AI-Powered PDF Analysis */}
-<div className="flex items-start">
-  <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">PDF Parsing System - AI-Powered PDF Analysis-{" "}
-  <a href="https://github.com/Pulishekhar/PAI.git" className="underline">
-                link
-              </a>
-
-
-  </h3>
-  <ul className="list-disc ml-6 w-3/4">
-    <li>Developed an AI-powered PDF parsing system capable of analyzing large PDFs (1000+ pages), built with AngularJS for the frontend and Python for the backend, optimized for asynchronous processing.</li>
-    <li>Integrated AI-powered search and summarization features, enabling efficient extraction of meaningful data from lengthy documents with minimal user input.</li>
-    <li>Implemented chunked processing (50-100 pages at a time) with caching, significantly improving performance and reducing memory usage during large file handling.</li>
-    <li>Utilized pdfplumber and PyMuPDF libraries in Python for precise extraction of text and images from PDFs, supporting the backend processing of large files with streaming capabilities.</li>
-  </ul>
-  </div>
-          {/* Bookstore Application */}
-          <div className="flex items-start">
-            <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">
-              Bookstore Application -{" "}
-              <a href="https://github.com/Pulishekhar/Bookstore.git" className="underline">
-                link
-              </a>
-            </h3>
-            <ul className="list-disc ml-6 w-3/4">
-              <li>Built a full-stack bookstore application using React, Node.js, Express.js, and MongoDB, featuring book categorization, user authentication, and access control for restricted sections.</li>
-              <li>Employed Tailwind CSS and DaisyUI for responsive UI design and integrated React Router for dynamic routing between pages.</li>
-              <li>Implemented form validation with React Hook Form, and provided real-time user feedback using react-hot-toast notifications.</li>
-            </ul>
-          </div>
+        {/* Project List */}
+        <div className="flex flex-col space-y-8">
+          {projects.map((project, index) => (
+            <div key={index} className="flex gap-6 flex-col md:flex-row items-start">
+              <img
+                src={project.imageSrc}
+                alt={project.imageAlt}
+                className="w-full md:w-1/3 h-auto rounded-lg shadow-lg"
+              />
+              <div className="md:w-2/3">
+                <h3 className="text-xl font-semibold mb-2 text-left">
+                  <a
+                    href={project.url}
+                    className="underline hover:text-gray-400 transition-colors duration-200"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
+                <ul className="list-disc ml-6 text-gray-300 space-y-1">
+                  {project.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Experience Heading */}
-        <h2 className="text-4xl font-bold mt-8 mb-4 text-left ml-4">Experience</h2>
+<h2 className="text-4xl font-bold mt-12 mb-4 text-left ml-4">Experience</h2>
 
-        {/* Experience Items */}
-        <div className="flex flex-col space-y-6">
-          {/* NeuroNexus Innovations - Intern */}
-          <div className="flex items-start">
-            <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">
-              NeuroNexus Innovations - Intern <span className="text-gray-300">(March 2023 - April 2024)</span>
-            </h3>
-            <ul className="list-disc ml-6 w-3/4">
-              <li>Developed an interactive platform that allows users to create and participate in quizzes, featuring functionalities for entering questions, selecting multiple-choice answers, and providing immediate feedback upon submission.</li>
-              <li>Collaborated with a team of developers to implement user interface enhancements, improving the overall user experience and accessibility of the platform.</li>
-            </ul>
-          </div>
+{/* Redesigned Experience Timeline */}
+<div className="relative border-l-4 border-blue-600 ml-6 pl-6 space-y-12">
+  {experiences.map((exp, index) => (
+    <div key={index} className="relative">
+      {/* Timeline Marker */}
+      <div className="absolute -left-3.5 top-2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
 
-          {/* Sanskriti Committee - Associate Coordinator */}
-          <div className="flex items-start">
-            <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">
-              Sanskriti Committee, NIT RR - Associate Coordinator <span className="text-gray-300">(Aug 2023)</span>
-            </h3>
-            <ul className="list-disc ml-6 w-3/4">
-              <li>Supported Core Coordinators in planning and executing events, ensuring smooth operations throughout the process.</li>
-              <li>Assigned tasks to volunteers based on their strengths and interests, fostering a collaborative and engaging environment.</li>
-              <li>Completed tasks assigned by the Coordinators while upholding the organization’s values and maintaining professionalism.</li>
-            </ul>
-          </div>
-
-          {/* Sanskriti Committee - Volunteer */}
-          <div className="flex items-start">
-            <h3 className="text-xl font-semibold w-1/4 mt-4 text-left">
-              Sanskriti Committee, NIT RR - Volunteer <span className="text-gray-300">(Dec 2022 – July 2023)</span>
-            </h3>
-            <ul className="list-disc ml-6 w-3/4">
-              <li>Enhanced leadership and problem-solving skills by leading teams.</li>
-              <li>Ensured the success of Eclectika 2023, providing flexibility and assistance as needed.</li>
-              <li>Assisted in planning event programs, including speaker selection, agenda development, and content coordination.</li>
-            </ul>
-          </div>
+      {/* Card */}
+      <div className="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition duration-300 ease-in-out">
+        <div className="flex justify-between items-center mb-2">
+          <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
+          <span className="text-sm text-gray-400">{exp.date}</span>
         </div>
+        <ul className="list-disc list-inside text-gray-300 space-y-2 pl-1">
+          {exp.points.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );

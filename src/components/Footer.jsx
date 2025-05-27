@@ -5,31 +5,25 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
-    <footer className="w-full flex justify-center items-center p-4 bg-transparent text-white fixed bottom-0">
-      <div className="flex space-x-4">
-        <a 
-          href="https://github.com/Pulishekhar" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-2xl transition duration-300 hover:text-gray-500" // Changed hover color to blue
-        >
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a 
-          href="https://www.linkedin.com/in/pulishekhar/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-2xl transition duration-300 hover:text-gray-500" // Changed hover color to blue
-        >
-          <FontAwesomeIcon icon={faLinkedin} />
-        </a>
-        <a 
-  href="mailto:pulishekhar6039@gmail.com"
-  className="text-2xl transition duration-300 hover:text-gray-500" // Dark gray as a black alternative
->
-  <FontAwesomeIcon icon={faEnvelope} />
-</a>
-
+    <footer className="fixed bottom-0 w-full py-4 bg-black bg-opacity-50 backdrop-blur-sm border-t border-gray-800">
+      <div className="container mx-auto">
+        <div className="flex justify-center space-x-8">
+          {[
+            { icon: faGithub, url: "https://github.com/Pulishekhar" },
+            { icon: faLinkedin, url: "https://www.linkedin.com/in/pulishekhar/" },
+            { icon: faEnvelope, url: "mailto:pulishekhar6039@gmail.com" }
+          ].map((item, index) => (
+            <a
+              key={index}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors duration-300 text-xl"
+            >
+              <FontAwesomeIcon icon={item.icon} />
+            </a>
+          ))}
+        </div>
       </div>
     </footer>
   );
