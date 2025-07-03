@@ -3,15 +3,15 @@ import React from "react";
 const projects = [
   {
     title: "Chatting App - Real-time Messaging Application",
-    url: "https://github.com/Pulishekhar/Chatting-App.git",
+    url: "https://chatting-app-rlv4.onrender.com/",
     description: [
-      "Built a real-time messaging application using the MERN stack, with user authentication, direct messaging, and chat history.",
-      "Integrated WebSockets (Socket.io) for instant message delivery and smooth user experience.",
-      "User-friendly interface with dynamic message input, real-time notifications, and image sending.",
+      " Developed a full-stack real-time chat application using React.js, Node.js, Express, MongoDB, and Socket.io, enabling instant messaging with user authentication, session management, and protected route access.",
+      " Built secure auth with JWT in httpOnly cookies, used Zustand for global state, and integrated Socket.io for real-timechat, presence, and seamless user experience with 100+ concurrent users.",
+      " Architected scalable REST APIs and optimized frontend load time by 30% using Vite and dynamic imports;deployed via CI/CD from GitHub.",
       "Optimized backend with Express and MongoDB for scalable data storage.",
     ],
     imageSrc:
-      "https://www.livechat.com/app/og-app.9cb8caed98d60ab801c695f17c4231fb52f591a5c5055cbc509646d553cb6a72.png",
+      "/images/chatting.png",
     imageAlt: "Chatting App Preview",
   },
   {
@@ -37,6 +37,19 @@ const projects = [
     imageSrc: "/images/bookstore-preview.png",
     imageAlt: "Bookstore App Preview",
   },
+  {
+  title: "InTask – Task Management System",
+  url: "https://github.com/Pulishekhar/InTask.git",
+  description: [
+    "Engineered a full-stack Kanban-based task management system using React.js, Node.js, Express, MySQL, and Sequelize, supporting 3 roles: Admin, Lead, and Member.",
+    "Implemented secure JWT authentication with httpOnly cookies, enabling protected APIs and role-based dashboards across 100+ dynamic UI states.",
+    "Enabled real-time task assignment, drag‑and‑drop workflows, and status tracking, improving project visibility and reducing manual follow‑ups by 40%.",
+    "Designed scalable backend with REST APIs and Sequelize models for teams, projects, tasks, and comments, facilitating easy collaboration across 10+ teams."
+  ],
+  imageSrc: "/images/intask.png",
+  imageAlt: "intask - preview",
+}
+
 ];
 
 const experiences = [
